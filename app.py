@@ -447,9 +447,9 @@ def render_sidebar() -> tuple[str, str]:
     with st.sidebar:
         # MedFlow AI logo
         st.markdown(
-            f"""<div style='text-align:center; padding:1rem 0 0.5rem 0;'>
-            {MEDFLOW_LOGO_SVG}
-            </div>""",
+            "<div style='text-align:center; padding:1rem 0 0.5rem 0;'>"
+            + MEDFLOW_LOGO_SVG.strip()
+            + "</div>",
             unsafe_allow_html=True,
         )
 
