@@ -207,7 +207,7 @@ def load_embedder(mode: str, device: str = "cpu"):
     try:
         from embedder import DNAEmbedder
         return DNAEmbedder(device=device), False
-    except ImportError:
+    except Exception:
         from embedder import MockEmbedder
         return MockEmbedder(), True   # True = fell back to mock
 
@@ -718,7 +718,7 @@ def main():
     if demo_mode or fell_back:
         msg = "Demo mode — embeddings are deterministic random (MockEmbedder). Load a trained checkpoint for real predictions."
         if fell_back:
-            msg = "⚡ <code>transformers</code> not installed — automatically switched to Demo mode. Run <code>pip install transformers accelerate</code> for the full model."
+            msg = "⚡ Full model unavailable in this environment — automatically switched to Demo mode (MockEmbedder). Deploy locally with <code>pip install transformers accelerate</code> for real predictions."
         st.markdown(f"<div class='demo-banner'>⚠️ {msg}</div>", unsafe_allow_html=True)
 
     with st.spinner("Loading GenGI model …"):
