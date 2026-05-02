@@ -674,7 +674,7 @@ def tab_architecture(demo_mode: bool):
             c = torch.load(ckpt, map_location="cpu")
             st.success(f"Checkpoint: epoch {c.get('epoch','?')} — val AUROC {c.get('val_auroc',0):.4f}")
         else:
-            st.info("No checkpoint — run `python train.py --mock-embedder` to train.")
+            st.caption("No checkpoint found — run `python train.py --mock-embedder` to train a model.")
 
 
 # ---------------------------------------------------------------------------
@@ -738,7 +738,7 @@ def main():
   Built by <strong>Dr. Mamadou Lamine TALL</strong> ·
   <a href="https://github.com/mamadoulaminetall">MedFlow AI</a> ·
   Powered by Nucleotide Transformer + PyTorch ·
-  <a href="mailto:laminetall30@gmail.com">laminetall30@gmail.com</a>
+  <a href="mailto:mamadoulaminetallgithub@gmail.com">mamadoulaminetallgithub@gmail.com</a>
 </div>
 """, unsafe_allow_html=True)
 
