@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Distribution / packaging
+*.tar.gz
+*.whl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Data — ClinVar files are large, don't commit
+data/
+!data/.gitkeep
+
+# Model checkpoints
+models/*.pt
+models/*.bin
+models/*.safetensors
+!models/.gitkeep
+
+# Logs
+logs/
+*.log
+wandb/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
