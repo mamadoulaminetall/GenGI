@@ -483,6 +483,7 @@ induced by the substitution in NT embedding space.
 🔗 [AI4GI · IGMM CNRS Montpellier](https://www.igmm.cnrs.fr)
 🔗 [GitHub · GenGI](https://github.com/mamadoulaminetall/GenGI)
         """)
+        st.markdown("""<a href="https://buy.stripe.com/00w9AT8Vy0SxcF81QGb3q07" target="_blank" style="display:block;background:linear-gradient(135deg,#10b981,#059669);color:white;text-align:center;padding:11px 16px;border-radius:9px;font-weight:700;text-decoration:none;font-size:0.87rem;margin-top:10px">💳 S'abonner — 99€/mois</a>""", unsafe_allow_html=True)
 
     return mode_label, device
 
